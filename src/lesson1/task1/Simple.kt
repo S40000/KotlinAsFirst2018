@@ -9,6 +9,8 @@ import kotlin.math.*
  * Вычисление квадрата целого числа
  */
 fun sqr(x: Int) = x * x
+        var x = x * x
+        println $x
 
 /**
  * Пример
@@ -16,6 +18,8 @@ fun sqr(x: Int) = x * x
  * Вычисление квадрата вещественного числа
  */
 fun sqr(x: Double) = x * x
+        var x = x * x
+        prntln $x
 
 /**
  * Пример
@@ -58,7 +62,10 @@ fun main(args: Array<String>) {
  * Пользователь задает время в часах, минутах и секундах, например, 8:20:35.
  * Рассчитать время в секундах, прошедшее с начала суток (30035 в данном случае).
  */
-fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
+fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO() {
+        var sec = hours * seconds * monutes
+        println sec
+}
 
 /**
  * Тривиальная
@@ -67,7 +74,13 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
  * Определить длину того же отрезка в метрах (в данном случае 18.98).
  * 1 сажень = 3 аршина = 48 вершков, 1 вершок = 4.445 см.
  */
-fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
+fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO() {
+        var sagenes = 8
+        var arshines = 2
+        var vershoks = 11
+        var meters = sagenes * vershoks * arshines
+println $meters
+}
 
 /**
  * Тривиальная
@@ -100,7 +113,10 @@ fun thirdDigit(number: Int): Int = TODO()
  * прибыл на станцию назначения в h2 часов m2 минут того же дня (например в 13:01).
  * Определите время поезда в пути в минутах (в данном случае 216).
  */
-fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int = TODO()
+fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int {
+var time = 24 * 60 - (hoursDepart * 60 + minutesDepart) + houersArrive * 60 + minutesArrive
+       println $time
+}
 
 /**
  * Простая
@@ -117,4 +133,9 @@ fun accountInThreeYears(initial: Int, percent: Int): Double = TODO()
  * Пользователь задает целое трехзначное число (например, 478).
  * Необходимо вывести число, полученное из заданного перестановкой цифр в обратном порядке (например, 874).
  */
-fun numberRevert(number: Int): Int = TODO()
+fun numberRevert(number: Int): Int {
+ var x = number : 100
+var y = (number - 100 * x) : 10
+var z = number - 100 * x -10 * y
+println $z$y$x
+}
